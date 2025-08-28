@@ -45,7 +45,7 @@
     <!-- Heart counter -->
     <div class="bg-[#edfff1] rounded-full px-2 py-1 md:px-4 md:py-2 flex items-center gap-1 md:gap-2">
       <img src="assets/heart.png" alt="Heart" class="h-4 w-4 md:h-5 md:w-5">
-      <span id="heart-count" class="font-medium text-gray-700 text-xs md:text-base">0</span>
+      <span id="love-number" class="font-medium text-gray-700 text-xs md:text-base">0</span>
     </div>
     
     
@@ -53,14 +53,14 @@
 
     <div class="bg-[#edfff1] rounded-full px-2 py-1 md:px-4 md:py-2 flex items-center gap-1 md:gap-2">
       <img src="assets/coin.png" alt="Coin" class="h-4 w-4 md:h-5 md:w-5">
-      <span id="coin-count" class="font-medium text-gray-700 text-xs md:text-base">100</span>
+      <span id="coin-number" class="font-medium text-gray-700 text-xs md:text-base">100</span>
     </div>
     
   
     <!--For  Copy button -->
 
 <button id="copy-button" class="bg-[#00A63E] text-white rounded-full px-3 py-1 md:px-6 md:py-2 font-medium hover:bg-[#008a35] transition-colors text-xs md:text-base">
-  <span class="hidden sm:inline"><span id="copy-count">0</span> Copy</span>
+  <span class="hidden sm:inline"><span id="copy-number">0</span> Copy</span>
   <span class="sm:hidden"><span id="copy-count-mobile">0</span></span>
 </button>
   </div>
@@ -117,11 +117,12 @@
           <div class="bg-gray-100 text-gray-600 text-xs px-3 py-1 rounded-full inline-block mb-auto w-fit">All</div>
           
           <div class="flex gap-3 mt-4">
-            <button class="copy-btn flex-1 bg-gray-100 text-gray-700 py-2 px-4 rounded-lg flex items-center justify-center gap-2 hover:bg-gray-200 transition-colors" data-number="999">
-              <i class="fa-regular fa-copy"></i>
+            <button class=" border-gray-600 copy-btn flex-1 bg-gray-100 text-gray-700 py-2 px-4 rounded-lg border border-gray-[50px] flex items-center justify-center
+             gap-2 hover:bg-gray-200  transition-colors" data-number="999">
+              <i class="fa-regular fa-copy  "></i>
               Copy
             </button>
-            <button class="call-btn flex-1 bg-[#00A63E] text-white py-2 px-4 rounded-lg flex items-center justify-center gap-2 hover:bg-[#008a35] transition-colors" data-number="999" data-service="National Emergency Number">
+            <button class="call-btn flex-1 bg-[#00A63E] text-white py-2 px-4 rounded-lg flex items-center justify-center  gap-2 hover:bg-[#008a35] transition-colors" data-number="999" data-service="National Emergency Number">
               <i class="fa-solid fa-phone"></i>
               Call
             </button>
@@ -147,7 +148,7 @@
           <div class="bg-gray-100 text-gray-600 text-xs px-3 py-1 rounded-full inline-block mb-auto w-fit">Police</div>
           
           <div class="flex gap-3 mt-4">
-            <button class="copy-btn flex-1 bg-gray-100 text-gray-700 py-2 px-4 rounded-lg flex items-center justify-center gap-2 hover:bg-gray-200 transition-colors" data-number="999">
+            <button class="copy-btn flex-1 bg-gray-100 text-gray-700 py-2 px-4 rounded-lg flex items-center justify-center border border-gray-[50px] gap-2 hover:bg-gray-200 transition-colors" data-number="999">
               <i class="fa-regular fa-copy"></i>
               Copy
             </button>
@@ -159,6 +160,7 @@
         </div>
 
         <!-- Card 3  -->
+
         <div class="bg-white rounded-[13px] p-6 shadow-sm relative h-[360px] flex flex-col">
           <div class="flex justify-between items-start mb-4">
             <div class="w-[60px] h-[60px] bg-[#FFE3E2] rounded-lg flex items-center justify-center">
@@ -177,7 +179,7 @@
           <div class="bg-gray-100 text-gray-600 text-xs px-3 py-1 rounded-full inline-block mb-auto w-fit">Fire</div>
           
           <div class="flex gap-3 mt-4">
-            <button class="copy-btn flex-1 bg-gray-100 text-gray-700 py-2 px-4 rounded-lg flex items-center justify-center gap-2 hover:bg-gray-200 transition-colors" data-number="999">
+            <button class="copy-btn flex-1 bg-gray-100 text-gray-700 py-2 px-4 rounded-lg flex items-center justify-center border border-gray-[50px] gap-2 hover:bg-gray-200 transition-colors" data-number="999">
               <i class="fa-regular fa-copy"></i>
               Copy
             </button>
@@ -207,7 +209,7 @@
           <div class="bg-gray-100 text-gray-600 text-xs px-3 py-1 rounded-full inline-block mb-auto w-fit">Health</div>
           
           <div class="flex gap-3 mt-4">
-            <button class="copy-btn flex-1 bg-gray-100 text-gray-700 py-2 px-4 rounded-lg flex items-center justify-center gap-2 hover:bg-gray-200 transition-colors" data-number="1994-999999">
+            <button class="copy-btn flex-1 bg-gray-100 text-gray-700 py-2 px-4 rounded-lg flex items-center justify-center border border-gray-[50px] gap-2 hover:bg-gray-200 transition-colors" data-number="1994-999999">
               <i class="fa-regular fa-copy"></i>
               Copy
             </button>
@@ -237,7 +239,7 @@
           <div class="bg-gray-100 text-gray-600 text-xs px-3 py-1 rounded-full inline-block mb-auto w-fit">Help</div>
           
           <div class="flex gap-3 mt-4">
-            <button class="copy-btn flex-1 bg-gray-100 text-gray-700 py-2 px-4 rounded-lg flex items-center justify-center gap-2 hover:bg-gray-200 transition-colors" data-number="109">
+            <button class="copy-btn flex-1 bg-gray-100 text-gray-700 py-2 px-4 rounded-lg flex items-center justify-center border border-gray-[50px] gap-2 hover:bg-gray-200 transition-colors" data-number="109">
               <i class="fa-regular fa-copy"></i>
               Copy
             </button>
@@ -267,7 +269,7 @@
           <div class="bg-gray-100 text-gray-600 text-xs px-3 py-1 rounded-full inline-block mb-auto w-fit">Govt.</div>
           
           <div class="flex gap-3 mt-4">
-            <button class="copy-btn flex-1 bg-gray-100 text-gray-700 py-2 px-4 rounded-lg flex items-center justify-center gap-2 hover:bg-gray-200 transition-colors" data-number="106">
+            <button class="copy-btn flex-1 bg-gray-100 text-gray-700 py-2 px-4 rounded-lg flex items-center justify-center gap-2 border border-gray-[50px] hover:bg-gray-200 transition-colors" data-number="106">
               <i class="fa-regular fa-copy"></i>
               Copy
             </button>
@@ -297,7 +299,7 @@
           <div class="bg-gray-100 text-gray-600 text-xs px-3 py-1 rounded-full inline-block mb-auto w-fit">Electricity</div>
           
           <div class="flex gap-3 mt-4">
-            <button class="copy-btn flex-1 bg-gray-100 text-gray-700 py-2 px-4 rounded-lg flex items-center justify-center gap-2 hover:bg-gray-200 transition-colors" data-number="16216">
+            <button class="copy-btn flex-1 bg-gray-100 text-gray-700 py-2 px-4 rounded-lg flex items-center justify-center gap-2 border border-gray-[50px] hover:bg-gray-200 transition-colors" data-number="16216">
               <i class="fa-regular fa-copy"></i>
               Copy
             </button>
@@ -327,7 +329,7 @@
           <div class="bg-gray-100 text-gray-600 text-xs px-3 py-1 rounded-full inline-block mb-auto w-fit">NGO</div>
           
           <div class="flex gap-3 mt-4">
-            <button class="copy-btn flex-1 bg-gray-100 text-gray-700 py-2 px-4 rounded-lg flex items-center justify-center gap-2 hover:bg-gray-200 transition-colors" data-number="16445">
+            <button class="copy-btn flex-1 bg-gray-100 text-gray-700 py-2 px-4 rounded-lg flex items-center justify-center gap-2 border border-gray-[50px] hover:bg-gray-200 transition-colors" data-number="16445">
               <i class="fa-regular fa-copy"></i>
               Copy
             </button>
@@ -357,7 +359,7 @@
           <div class="bg-gray-100 text-gray-600 text-xs px-3 py-1 rounded-full inline-block mb-auto w-fit">Travel</div>
           
           <div class="flex gap-3 mt-4">
-            <button class="copy-btn flex-1 bg-gray-100 text-gray-700 py-2 px-4 rounded-lg flex items-center justify-center gap-2 hover:bg-gray-200 transition-colors" data-number="163">
+            <button class="copy-btn flex-1 bg-gray-100 text-gray-700 py-2 px-4 rounded-lg flex items-center justify-center border border-gray-[50px] gap-2 hover:bg-gray-200 transition-colors" data-number="163">
               <i class="fa-regular fa-copy"></i>
               Copy
             </button>
@@ -405,3 +407,4 @@
     <script src="script.js"></script>
 </body>
 </html>
+
