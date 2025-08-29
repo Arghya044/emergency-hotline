@@ -9,6 +9,12 @@ function updateNavbar() {
     document.getElementById('love-number').textContent = heartCount;
     document.getElementById('coin-number').textContent = coinCount;
     document.getElementById('copy-number').textContent = copyCount;
+
+    // Also update mobile copy count
+    const mobileCopyCount = document.getElementById('copy-count-mobile');
+    if (mobileCopyCount) {
+        mobileCopyCount.textContent = copyCount;
+        }
 }
 
 
